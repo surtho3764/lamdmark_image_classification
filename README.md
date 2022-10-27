@@ -8,7 +8,7 @@ test dataser:In GLDv2 ,there are 200 images.
 
 ## Solution Architecture
 My solution used Sub-center ArcFace K=3, because Sub-center ArcFace a recent improvement over Sub-center ArcFace,designed to better handle noisy data.
-![image] (url)
+![image] (https://github.com/surtho3764/lamdmark_image_classification/blob/main/doc/Model%20architecture.jpeg)
 
 
 ## CNN model -Ensemble 
