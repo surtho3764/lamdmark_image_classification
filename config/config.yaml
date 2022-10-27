@@ -1,0 +1,101 @@
+## network config
+EfficientNet_B7:
+  pre_trained_name: 'tf_efficientnet_b7_ns'
+  save_model_dir: "./model_weight/EfficientNet_B7"
+  save_model_name: "landmark_EfficientNet_B7.pth"
+  save_finish_model_name: "finished_landmark_EfficientNet_B7.pth"
+  image_size: [256 ,512 ,672 ]
+  epochs: [5,13,1]
+
+
+EfficientNet_B6:
+  pre_trained_name: "tf_efficientnet_b6_ns"
+  save_model_dir: "./model_weight/EfficientNet_B6"
+  save_model_name: "landmark_EfficientNet_B6.pth"
+  save_finish_model_name: "finished_landmark_EfficientNet_B6.pth"
+  image_size: [256,512,768]
+  epochs: [10,17,1]
+
+
+EfficientNet_B5:
+  pre_trained_name: "tf_efficientnet_b5_ns"
+  save_model_dir: "./model_weight/EfficientNet_B5"
+  save_model_name: "landmark_EfficientNet_B5.pth"
+  save_finish_model_name: "finished_landmark_EfficientNet_B5.pth"
+  image_size: [256,576,768]
+  epochs: [10,16,1]
+
+
+EfficientNet_B4:
+  pre_trained_name: "tf_efficientnet_b4_ns"
+  save_model_dir: "./model_weight/EfficientNet_B5"
+  save_model_name: "landmark_EfficientNet_B5.pth"
+  save_finish_model_name: "finished_landmark_EfficientNet_B5.pth"
+  image_size: [256,576,768]
+  epochs: [10,16,1]
+
+
+EfficientNet_B3:
+  pre_trained_name: "tf_efficientnet_b3_ns"
+  save_model_dir: "./model_weight/EfficientNet_3"
+  save_model_name: "landmark_EfficientNet_B3.pth"
+  save_finish_model_name : "finished_landmark_EfficientNet_B3.pth"
+  image_size: [256,544,1024]
+  epochs: [10,18,1]
+
+
+ResNeSt101:
+  pre_trained_name: "ResNeSt101"
+  save_model_dir : "./model_weight/ResNeSt101"
+  save_model_name: "landmark_ResNeSt101.pth"
+  save_finish_model_name: "finished_landmark_ResNeSt101.pth"
+  image_size: [256, 576, 768]
+  epochs: [10,16,1]
+
+
+# data dir config
+data_dir: './raw_data/GLDv2/sample_data'
+train_file_name: 'train.csv'
+
+# context record dir
+context_dir : './context'
+
+# choose model
+model_type: 'EfficientNet_B7'
+
+# choose image_size type (0,1,2)
+image_size_type: 0
+
+# choosen n_epochs (0,1,2)
+n_epochs_type: 0
+
+## initial
+k_fold: 0
+
+# epochs開始點，最小從1開始
+start_from_epoch: 1
+
+# dataloader batch size
+BATCH_SIZE: 0
+batch_size: 0
+
+# num_works
+num_workers: 0
+
+#learn rate
+lr_int: 0.00001
+
+# 是否有使用amp套件 (GPU運算時，在使用的)
+use_amp : False
+
+
+# 是否喜歡GPU
+is_gpu: False
+get_val_output : False
+
+
+# pretrained model
+# Is exits pretrained model weights
+exit_pretrained_model_weight : False
+
+

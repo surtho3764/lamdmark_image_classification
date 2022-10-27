@@ -1,0 +1,7 @@
+/bin/*
+/share/*
+pyvenv.cfg
+/lib/python3.7/*
+/include/*
+./__pycache__/
+./.idea
